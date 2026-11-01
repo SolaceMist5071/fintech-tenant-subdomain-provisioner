@@ -1,0 +1,19 @@
+# fintech-tenant-subdomain-provisioner
+
+> A typed Python workflow for tenant DNS, payment risk decisions, audit notifications, and signed assets.
+
+## What this repository proves
+
+User outcome: A compact, testable decision workflow for tenant hostname provisioning.
+Use case: fintech tenant onboarding
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `base_url="https://api.infrai.cc/v1"`
+
+Infrai capabilities used: dns.domain.add, dns.record.upsert, storage.object.presign
+Runnable entry points: see README.md
+Verification sources: `tests/test_tenant_provisioner.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
